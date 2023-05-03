@@ -1,7 +1,7 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
-// https://vitejs.dev/config/
+// https://vitejs.dev/config
 export default defineConfig({
     build: {
         minify: process.argv.includes('watch'),
@@ -10,6 +10,9 @@ export default defineConfig({
             formats: ['iife'],
             name: 'core',
             fileName: 'core',
+        },
+        rollupOptions: {
+            external: [],
         },
         outDir: resolve(__dirname, '../../dist'),
     },

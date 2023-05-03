@@ -7,5 +7,11 @@ export default defineConfig({
     build: {
         minify: process.argv.includes('watch'),
         outDir: resolve(__dirname, '../../dist'),
+        rollupOptions: {
+            output: {
+                format: 'iife',
+            },
+            external: [],
+        },
     },
 });
