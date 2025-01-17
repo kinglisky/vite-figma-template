@@ -1,0 +1,17 @@
+{
+  "name": "vite-react-figma-plugin-template",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Figma plugin development template with monorepo structure",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -r dev",
+    "build": "pnpm -r build",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
+}
